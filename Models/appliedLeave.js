@@ -25,7 +25,13 @@ const appliedLeave = db.define("", {
         allowNull: true,
     },
     approval: {
-        type: sequelize.INTEGER,
+        type: sequelize.ENUM,
+        validate: {
+            isValidValue: function(value) {
+                if (value != 'Waiting' && value != 'Approved' && value != 'Rejected')
+                    throw new Error("Invalid Type");
+            }
+        }
     },
     
 }, {

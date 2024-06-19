@@ -38,4 +38,7 @@ VALUES
 	(3, '2024-06-29', '2024-06-29', 3, NULL, NULL, 'gonna take licence', 0),
 	(5, '2024-07-01', '2024-07-01', 1, NULL, NULL, 'House warming function', 0);
 
+ALTER TABLE appliedLeave
+MODIFY COLUMN approval ENUM('Approved', 'Waiting', 'Rejected') NOT NULL DEFAULT 'Waiting';  
+
 
