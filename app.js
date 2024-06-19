@@ -25,8 +25,8 @@ app.use(function (req, res, next) {
   next();
 });
 const EmployeeDetails = `SELECT AL.STARTDATE,AL.ENDDATE, AL.REASON, AL.APPROVAL
-    FROM APPLIEDLEAVE AL 
-    INNER JOIN EMPLOYEE E ON AL.EMPLOYEEID = E.ID WHERE `
+    FROM appliedLeave AL 
+    INNER JOIN employee E ON AL.EMPLOYEEID = E.ID WHERE `
 
 app.get("/employee", (req, res) => {
   employeeDbModel.findAll({})
