@@ -29,10 +29,6 @@ const employee = db.define("employee", {
       type: Sequelize.DATE,
       allowNull: true
     },
-    appliedLeave: {
-      type: Sequelize.DATE,
-      allowNull: true
-    },
     bloodGroup: {
       type: Sequelize.STRING,
       allowNull: true,
@@ -40,14 +36,7 @@ const employee = db.define("employee", {
         len: [4] // Ensure blood group is exactly 4 characters long
       }
     },
-    personalLeave: {
-      type: Sequelize.INTEGER,
-      allowNull: false
-    },
-    sickLeave: {
-      type: Sequelize.INTEGER,
-      allowNull: false
-    },
+   
    
     
   }, {

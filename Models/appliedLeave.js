@@ -33,6 +33,15 @@ const appliedLeave = db.define("", {
             }
         }
     },
+    leaveType: {
+        type: sequelize.ENUM,
+        validate: {
+            isValidValue: function(value) {
+                if (value != 'casual' && value != 'sick')
+                    throw new Error("Invalid Type");
+            }
+        }
+    },
     
 }, {
     timestamps: true,

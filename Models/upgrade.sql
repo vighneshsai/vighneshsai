@@ -26,7 +26,7 @@ CREATE TABLE `employee` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
-INSERT INTO `employee` (`id`, `name`, `age`, `phoneNumber`, `email`, `dob`, `appliedLeave`, `bloodGroup`, `personalLeave`, `sickLeave`)
+INSERT INTO `employee` (`id`, `name`, `age`, `phoneNumber`, `email`, `dob`, `bloodGroup`)
 VALUES
 	(1, 'vicky', 39, 7896537257, 'vighnesh@gmail.com', '1985-05-17 00:00:00', NULL, NULL, 3, 4),
 	(3, 'siva', 37, 7896537435, 'siva@gmail.com', '1987-05-17 00:00:00', NULL, NULL, 7, 5);
